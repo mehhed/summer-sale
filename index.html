@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en" data-theme='light'>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>summer sale shope</title>
+    <!-- daisyUI link  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <!-- font awesome free  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- google font link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,500;0,700;1,600&display=swap" rel="stylesheet">
+    <style>
+        body{
+            font-family: 'Work Sans', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- hero section  -->
+        <section class="flex lg:justify-center lg:flex-row flex-col-reverse  gap-5 items-center sm:px-28 px-11 py-10 bg-[#F9F6E2]" >
+           <div class="flex-1 text-center">
+                <h1 class="sm:text-3xl text-2xl text-[#111] font-medium">---SALE FEVER---</h1>
+                <h2 class="sm:text-5xl text-3xl text-[#111] my-4 font-bold">Purchase TK 200 or <br> above & get <span class="text-[#E527B2]">20% off</span></h2>
+                <p class="text-xs sm:text-2xl text mt-12 font-medium text-[#111]">Use Promo Code <span class="p-3 font-semibold rounded-md bg-[#E527B2] text-white">SELL200</span></p>
+           </div>
+           <div class="flex-1">
+                <img class="w-fit" src="./images/Summer 1.png" alt="">
+           </div>
+        </section>
+    </header>
+    <main class="bg-[#F8F8F8] lg:px-28  py-10 pb-20">
+        <!-- product card proce calculate section  -->
+        <h1 class="text-4xl text-center sm:text-start font-semibold mb-5">Kitchenware</h1>
+        <section class="flex lg:justify-between lg:flex-row flex-col items-center lg:items-start gap-3">
+            <div>
+                <!-- kitchen product  -->
+                <div class="flex md:justify-between items-center  md:items-start md:flex-row flex-col font-semibold gap-8 ">
+                    <!-- product one card  -->
+                    <div class="p-5 rounded-lg bg-white flex-1  h-[300px] flex flex-col justify-between gap-3" onclick="productPrice('product-one', 'product-one-name') ">
+                        <div class="bg-[#f3f3f3] rounded-lg px-10 py-5 h-1/2 flex justify-center items-center" >
+                            <img class="h-full" src="./images/prod1.png" alt="">
+                        </div>
+                        <div class="text-center  mt-10">
+                            <div class="flex justify-center gap-3">
+                                <i class="fa-solid fa-star" style="color: #ffd43b;"></i>
+                                <i class="fa-solid fa-star" style="color: #ffd43b;"></i>
+                                <i class="fa-solid fa-star" style="color: #ffd43b;"></i>
+                                <i class="fa-regular fa-star" style="color: #ffd43b;"></i>
+                                <i class="fa-regular fa-star" style="color: #ffd43b;"></i>
+                            </div>
+                            <h2 class="lg:text-xl text-xs py-2 font-normal" id="product-one-name">K. Accessories</h2>
+                            <p class="text-xl font-normal text-[#838383] "> <span id="product-one">39.00</span>TK</p>
+                        </div>
+                    </div>
+                    <!-- product two card  -->
+                    <div class="p-5 rounded-lg bg-white flex-1  h-[300px] flex flex-col justify-between" onclick="productPrice('product-two', 'product-two-name') ">
+                        <div class="bg-[#f3f3f3]  rounded-lg px-10 py-5 h-1/2 flex justify-center items-center">
+                            <img class="h-full" src="./images/prod2.png" alt="">
+                        </div>
+                        <div class="text-center  mt-10">
+                            <div class="flex justify-center gap-3">
+                                <i class="fa-regular fa-star" style="color: #ffd43b;"></i>
+                                <i class="fa-regular fa-star" style="color: #ffd43b;"></i>
+                                <i class="fa-regular fa-star" style="color: #ffd43b;"></i>
+                                <i class="fa-regular fa-star" style="color: #ffd43b;"></i>
+                                <i class="fa-regular fa-star" style="color: #ffd43b;"></i>
+                            </div>
+                            <h2 class="lg:text-xl text-xs py-2 font-normal" id="product-two-name">K. Accessories</h2>
+                            <p class="text-xl font-normal text-[#838383] " id="product-two"> 25.00 TK</p>
+                        </div>
+                    </div>
+                    <!-- product three card  -->
+                    <div class="p-5 rounded-lg bg-white flex-1  h-[300px] flex flex-col justify-between" onclick="productPrice('product-three', 'product-three-name')">
+                        <div class="bg-[#f3f3f3]  rounded-lg px-10 py-5 h-1/2 flex justify-center items-center">
+                            <img class="h-full" src="./images/prod3.png" alt="">
+                        </div>
+                        <div class="text-center  mt-10">
+                            <div class="flex justify-center gap-3">
+                                <i class="fa-solid fa-star" style="color: #ffd43b;"></i>
+                                <i class="fa-solid fa-star" style="color: #ffd43b;"></i>
+                                <i class="fa-solid fa-star" style="color: #ffd43b;"></i>
+                                <i class="fa-solid fa-star" style="color: #ffd43b;"></i>                          
+                                <i class="fa-regular fa-star" style="color: #ffd43b;"></i>
+                            </div>
+                            <h2 class="lg:text-xl text-xs py-2 font-normal" id="product-three-name">Home Cooker</h2>
+                            <p class="text-xl font-normal text-[#838383] " id="product-three"> 49.00 TK</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Sports product  -->
+                <h1 class="text-4xl sm:text-start text-center font-semibold mb-5 mt-5">Sportswear</h1>
+                <div class="flex md:justify-between items-center  md:items-start md:flex-row flex-col font-semibold gap-8 ">
+                    <!-- product four card  -->
+                    <div class="p-5 rounded-lg bg-white flex-1  h-[300px] flex flex-col justify-between gap-3" onclick="productPrice('product-four', 'product-four-name') ">
+                        <div class="bg-[#f3f3f3] rounded-lg px-10 py-5 h-1/2 flex justify-center items-center" >
+                            <img class="h-full" src="./images/prod4.png" alt="">
+                        </div>
+                        <div class="text-center  mt-10">
+                            <div class="flex justify-center gap-3">
+                                <i class="fa-solid fa-star" style="color: #ffd43b;"></i>
+                                <i class="fa-solid fa-star" style="color: #ffd43b;"></i>
+                                <i class="fa-regular fa-star" style="color: #ffd43b;"></i>
+                                <i class="fa-regular fa-star" style="color: #ffd43b;"></i>
+                                <i class="fa-regular fa-star" style="color: #ffd43b;"></i>
+                            </div>
+                            <h2 class="lg:text-xl text-xs py-2 font-normal" id="product-four-name">Sports Back Cap</h2>
+                            <p class="text-xl font-normal text-[#838383] "> <span id="product-four">49.00</span>TK</p>
+                        </div>
+                    </div>
+                    <!-- product five card  -->
+                    <div class="p-5 rounded-lg bg-white flex-1  h-[300px] flex flex-col justify-between" onclick="productPrice('product-five', 'product-five-name') ">
+                        <div class="bg-[#f3f3f3]  rounded-lg px-10 py-5 h-1/2 flex justify-center items-center">
+                            <img class="h-full" src="./images/prod5.png" alt="">
+                        </div>
+                        <div class="text-center  mt-10">
+                            <div class="flex justify-center gap-3">
+                                <i class="fa-solid fa-star" style="color: #ffd43b;"></i>
+                                <i class="fa-solid fa-star" style="color: #ffd43b;"></i>
+                                <i class="fa-solid fa-star" style="color: #ffd43b;"></i>
+                                <i class="fa-solid fa-star" style="color: #ffd43b;"></i>
+                                <i class="fa-regular fa-star" style="color: #ffd43b;"></i>
+                            </div>
+                            <h2 class="lg:text-xl text-xs py-2 font-normal" id="product-five-name">Full Jersey Set</h2>
+                            <p class="text-xl font-normal text-[#838383] " id="product-five"> 69.00 TK</p>
+                        </div>
+                    </div>
+                    <!-- product six card  -->
+                    <div class="p-5 rounded-lg bg-white flex-1  h-[300px] flex flex-col justify-between" onclick="productPrice('product-six', 'product-six-name')">
+                        <div class="bg-[#f3f3f3]  rounded-lg px-10 py-5 h-1/2 flex justify-center items-center">
+                            <img class="h-full" src="./images/prod6.png" alt="">
+                        </div>
+                        <div class="text-center  mt-10">
+                            <div class="flex justify-center gap-3">
+                                <i class="fa-solid fa-star" style="color: #ffd43b;"></i>
+                                <i class="fa-solid fa-star" style="color: #ffd43b;"></i>
+                                <i class="fa-solid fa-star" style="color: #ffd43b;"></i>
+                                <i class="fa-regular fa-star" style="color: #ffd43b;"></i>                         
+                                <i class="fa-regular fa-star" style="color: #ffd43b;"></i>
+                            </div>
+                            <h2 class="lg:text-xl text-xs py-2 font-normal" id="product-six-name">Sports cates</h2>
+                            <p class="text-xl font-normal text-[#838383] " id="product-six"> 159.00 TK</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Furniture product  -->
+                <h1 class="text-4xl font-semibold sm:text-start text-center mb-5 mt-5">Furniture</h1>
+                <div class="flex md:justify-between items-center  md:items-start md:flex-row flex-col font-semibold gap-8 ">
+                    <!-- product seven card  -->
+                    <div class="p-5 rounded-lg bg-white flex-1  h-[300px]" onclick="productPrice('product-seven', 'product-seven-name') ">
+                        <div class="bg-[#f3f3f3] rounded-lg px-10 py-5 h-1/2 flex justify-center items-center" >
+                            <img class="h-full" src="./images/prod7.png" alt="">
+                        </div>
+                        <div class="text-center mt-10 ">
+                            <div class="flex justify-center gap-3">
+                                <i class="fa-solid fa-star" style="color: #ffd43b;"></i>
+                                <i class="fa-solid fa-star" style="color: #ffd43b;"></i>
+                                <i class="fa-solid fa-star" style="color: #ffd43b;"></i>
+                                <i class="fa-solid fa-star" style="color: #ffd43b;"></i>
+                                <i class="fa-regular fa-star" style="color: #ffd43b;"></i>
+                            </div>
+                            <h2 class="lg:text-xl text-xs py-2 font-normal" id="product-seven-name">Single Relax Chair</h2>
+                            <p class="text-xl font-normal text-[#838383] "> <span id="product-seven">185.00</span>TK</p>
+                        </div>
+                    </div>
+                    <!-- product eight card  -->
+                    <div class="p-5 rounded-lg bg-white flex-1  h-[300px]" onclick="productPrice('product-eight', 'product-eight-name') ">
+                        <div class="bg-[#f3f3f3]  rounded-lg px-10 py-5 h-1/2 flex justify-center items-center">
+                            <img class="h-full" src="./images/prod2.png" alt="">
+                        </div>
+                        <div class="text-center  mt-10">
+                            <div class="flex justify-center gap-3">
+                                <i class="fa-solid fa-star" style="color: #ffd43b;"></i>
+                                <i class="fa-solid fa-star" style="color: #ffd43b;"></i>
+                                <i class="fa-solid fa-star" style="color: #ffd43b;"></i>
+                                <i class="fa-solid fa-star" style="color: #ffd43b;"></i>
+                                <i class="fa-solid fa-star" style="color: #ffd43b;"></i>
+                            </div>
+                            <h2 class="text-xl py-2 font-normal" id="product-eight-name">Children play</h2>
+                            <p class="lg:text-xl text-xs font-normal text-[#838383] "> <span id="product-eight"> 299.00</span>TK</p>
+                        </div>
+                    </div>
+                    <!-- product nine card  -->
+                    <div class="p-5 rounded-lg bg-white flex-1 h-[300px]" onclick="productPrice('product-nine', 'product-nine-name')">
+                        <div class="bg-[#f3f3f3]  rounded-lg px-10 py-5 h-1/2 flex justify-center items-center">
+                            <img class="h-full" src="./images/prod9.png" alt="">
+                        </div>
+                        <div class="text-center  mt-10">
+                            <div class="flex justify-center gap-3">
+                                <i class="fa-solid fa-star" style="color: #ffd43b;"></i>
+                                <i class="fa-solid fa-star" style="color: #ffd43b;"></i>
+                                <i class="fa-solid fa-star" style="color: #ffd43b;"></i>
+                                <i class="fa-solid fa-star" style="color: #ffd43b;"></i>
+                                <i class="fa-solid fa-star" style="color: #ffd43b;"></i>
+                            </div>
+                            <h2 class="lg:text-xl text-xs py-2 font-normal" id="product-nine-name">Flexible Sofa</h2>
+                            <p class="text-xl font-normal text-[#838383] "> <span id="product-nine"> 339.00 </span> TK</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Purchase calculatio  -->
+            <div class="max-w-fit" >
+                <div class="p-5 bg-white rounded-lg"> 
+                    <h2 class="text-2xl font-medium mb-4">Have coupon?</h2>
+                    <div class="flex justify-start">
+                        <input type="text" name="" id="discount-input" class="p-4 border" placeholder="Coupon code">
+                        <button disabled id="discound-button" onclick="applyDiscount()" class="text-lg bg-[#E527B2] disabled:bg-[#e078c5] rounded-e-lg -mr-2 p-4 text-white">Apply</button>
+                    </div>
+                </div>
+                <div>
+                    <div class="p-5 pb-7 rounded-xl bg-white mt-5">
+                        <div class="px-6">
+                            <ol class="list-decimal font-medium text-2xl" id="productCart">
+                               
+                            </ol>
+                        </div>
+                        <hr class="my-5">
+                        <p class="font-semibold">Total price: <span class="font-normal"><span id="total-price">0.00</span >TK</span> </p>
+                        <p class="my-3 font-semibold">   Discount: <span class="font-normal"><span id="discount">00.00</span>TK</span></p>
+                        <p class="font-semibold">  Total: <span class="font-normal"><span id="total-pay">00.00</span>TK</span></p>
+                    </div>
+                    <div class="px-5">
+                        <!-- <button disabled class="w-full py-4 bg-[#E527B2] text-white rounded-lg -mt-6" id="button-purces">Make Purchase</button> -->
+                        <button disabled class="btn w-full py-4 hover:bg-[#E527B2] bg-[#E527B2] disabled:bg-[#e078c5] disabled:text-white text-white rounded-lg -mt-6" id="button-purces" onclick="my_modal_5.showModal()">Make Purchase</button>
+                            <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                            <form method="dialog" class="modal-box">
+                                <img src="./images/congo.png" class="w-1/4 mx-auto" alt="">
+                                <h3 class="font-bold sm:text-5xl text-3xl mt-4 text-center">Congratulations</h3>
+                                <p class="text-center text-xl font-normal text-[#1111117F] mt-3">Your Purchase the product</p>
+                                <div class="text-center mt-7"><a href="index.html" class="py-4 px-8 rounded-lg bg-[#E527B2] text-white">Go Home</a></div>
+                            </form>
+                            </dialog>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="index.js"></script>
+</body>
+</html>
